@@ -1,0 +1,83 @@
+/* 1. Reset */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* 3. Header */
+#main-header {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 4. Navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Hover */
+nav a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* Active link */
+nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid yellow;
+}
+
+/* 5. Section */
+.profile {
+    padding: 20px;
+}
+
+/* 6. Table */
+.skills-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+/* Table header */
+.skills-table th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Table cell */
+.skills-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Zebra striping */
+.skills-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover row */
+.skills-table tr:hover {
+    background-color: #ddd;
+}
+
+/* 7. Footer */
+footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 15px;
+}
