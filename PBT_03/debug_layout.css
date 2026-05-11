@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: 20px auto;
+    border: 2px solid black;
+}
+
+.sidebar,
+.content {
+    float: left;
+    border: 1px solid #ccc;
+}
+
+/* ========================= */
+/* FIX 1: BORDER-BOX */
+/* ========================= */
+
+.border-box-fix .sidebar {
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: lightblue;
+}
+
+.border-box-fix .content {
+    width: 660px;
+    padding: 30px;
+    box-sizing: border-box;
+    background: lightgreen;
+}
+
+/* ========================= */
+/* FIX 2: KHÔNG DÙNG BORDER-BOX */
+/* ========================= */
+
+.normal-fix .sidebar {
+    width: 258px;
+    padding: 20px;
+    background: pink;
+}
+
+.normal-fix .content {
+    width: 598px;
+    padding: 30px;
+    background: lightyellow;
+}
+
+/* sidebar:
+258 + 40 + 2 = 300
+
+content:
+598 + 60 + 2 = 660
+
+=> 300 + 660 = 960
+*/
+
+.clear {
+    clear: both;
+}
