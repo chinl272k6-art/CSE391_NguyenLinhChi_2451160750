@@ -1,0 +1,49 @@
+/* 1. 0,0,1 */
+p {
+  color: red;
+}
+
+/* 2. 0,0,2 */
+body p {
+  color: orange;
+}
+
+/* 3. 0,0,3 */
+html body p {
+  color: yellow;
+}
+
+/* 4. 0,1,0 */
+.text {
+  color: green;
+}
+
+/* 5. 0,1,1 */
+p.text {
+  color: blue;
+}
+
+/* 6. 0,2,0 */
+.text.highlight {
+  color: purple;
+}
+
+/* 7. 0,2,1 */
+p.text.highlight {
+  color: pink;
+}
+
+/* 8. 1,0,0 */
+#demo {
+  color: brown;
+}
+
+/* 9. 1,1,0 */
+#demo.highlight {
+  color: gray;
+}
+
+/* 10. 1,2,1 */
+body #demo.text.highlight {
+  color: black;
+}
