@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border=box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    margin-bottom: 20px
+}
+
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black ;
+    margin-bottom: 30px;
+    background-color: lightblue;
+    font-size: 20px
+}
+.content-box {
+    box-sizing: content-box;
+    background-color: lightcoral;
+}
+.border-box {
+    box-sizing: border-box;
+    background-color: lightgreen;
+}
+
+.margin-box {
+    width: 200px;
+    height: 100px;
+    background-color: orange;
+}
+.box-a {
+    margin-bottom: 50px;
+
+}
+.box-b{
+    margin-top: 30px;
+}
