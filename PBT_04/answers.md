@@ -109,4 +109,108 @@ Hoặc:
 item 7 nằm:
 hàng 3
 cột 1
-2 ô cuối hàng 3 trống                                   
+2 ô cuối hàng 3 trống      
+## Câu C1
+1. Navigation bar ngang
+
+(logo + menu + buttons)
+
+Nên dùng: Flexbox
+Vì:
+Navbar là layout 1 chiều (horizontal)
+Cần:
+căn trái/phải
+căn giữa dọc
+spacing giữa items
+
+Flexbox rất mạnh cho:
+
+justify-content
+align-items
+gap
+
+Ví dụ:
+
+LOGO      MENU      BUTTONS
+2. Lưới ảnh Instagram
+(3 cột đều nhau, số ảnh không biết trước)
+Nên dùng: Grid
+Vì:
+Đây là layout 2 chiều (rows + columns)
+Cần số cột cố định:
+grid-template-columns: repeat(3, 1fr);
+Grid giúp:
+ảnh tự xuống hàng
+đều cột
+dễ responsive
+Ví dụ:
+| img | img | img |
+| img | img | img |
+| img | img | img |
+3. Layout blog
+(main content + sidebar)
+Nên dùng: Grid
+Vì:
+Có cấu trúc rõ ràng:
+content lớn
+sidebar nhỏ
+Ví dụ:
+| MAIN CONTENT | SIDEBAR |
+Grid phù hợp chia vùng layout:
+grid-template-columns: 1fr 300px;
+Dễ kiem soát kích thước hơn Flexbox.
+4. Footer với 4 cột thông tin
+Nên dùng: Grid hoặc Flexbox
+(nhưng Grid đẹp hơn)
+Vì:
+Footer có nhiều cột đều nhau:
+| About | Links | Support | Contact |
+Grid rất tiện:
+grid-template-columns: repeat(4, 1fr);
+Nếu chỉ cần hàng ngang đơn giản thì Flexbox cũng được.
+5. Card sản phẩm
+(ảnh trên, text giữa, nút dưới — nút luôn dính đáy)
+Nên dùng: Flexbox
+Vì:
+Bên trong card là layout 1 chiều theo cột:
+IMAGE
+TEXT
+BUTTON
+Flexbox giúp:
+flex-ditection: column;
+margin-top: auto;
+=> nút luôn dính đáy card dù text dài/ngắn khác nhau.     
+## Câu C2
+Lỗi 1 — Cards không đều chiều cao
+Hiện tượng
+Card có text dài/ngắn khác nhau
+Nút "Mua" bị lệch
+Card cao thấp không đều
+Ví dụ:
+| Card 1 |   nút thấp
+| Card 2 |   nút cao hơn
+Nguyên nhân
+.card chưa dùng Flexbox theo chiều dọc nên:
+nội dung tự kéo chiều cao
+button không được đẩy xuống đáy
+
+Lỗi 2 — Item không nằm giữa màn hình
+Hiện tượng
+Muốn content nằm giữa màn hình nhưng vẫn ở góc trái trên.
+Nguyên nhân
+Container có:
+display: flex;
+nhưng thiếu:
+justify-content
+align-items
+
+Lỗi 3 — Sidebar bị co lại
+Hiện tượng
+Content quá dài
+Sidebar bị bóp nhỏ lại
+Không giữ được 250px
+Nguyên nhân
+Trong Flexbox:
+flex-shrink: 1;
+mặc định cho phép item co lại.
+Sidebar bị shrink để nhường chỗ cho content.
