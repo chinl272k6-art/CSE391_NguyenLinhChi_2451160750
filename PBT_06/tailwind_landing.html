@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Landing Page</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
+
+    <!-- Navbar -->
+    <nav class="bg-white dark:bg-gray-800 shadow-md px-6 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+
+            <h1 class="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                MyStore
+            </h1>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex gap-6 font-medium">
+                <li><a href="#" class="hover:text-blue-500">Home</a></li>
+                <li><a href="#" class="hover:text-blue-500">Products</a></li>
+                <li><a href="#" class="hover:text-blue-500">About</a></li>
+                <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-2xl">
+                ☰
+            </button>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-600 dark:bg-blue-900 text-white py-24 px-6">
+
+        <div class="container mx-auto text-center">
+
+            <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
+                Welcome To My Store
+            </h2>
+
+            <p class="text-lg md:text-xl mb-8">
+                Discover amazing products with modern design
+            </p>
+
+            <button class="bg-white text-blue-600 px-6 py-3 rounded-lg
+                           font-semibold hover:bg-gray-200
+                           transition duration-300">
+                Shop Now
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Product Section -->
+    <section class="container mx-auto px-6 py-16">
+
+        <h2 class="text-3xl font-bold text-center mb-10">
+            Featured Products
+        </h2>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Card 1 -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow p-4">
+
+                <img src="https://picsum.photos/300/200?1"
+                     class="w-full rounded-lg mb-4">
+
+                <h3 class="font-bold text-lg dark:text-gray-100">
+                    Product 1
+                </h3>
+
+                <p class="text-gray-500 dark:text-gray-300">
+                    Modern product description
+                </p>
+
+                <button class="mt-4 w-full bg-blue-500 hover:bg-blue-700 text-white py-2 rounded-lg">
+                    Buy
+                </button>
+
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow p-4">
+
+                <img src="https://picsum.photos/300/200?2"
+                     class="w-full rounded-lg mb-4">
+
+                <h3 class="font-bold text-lg dark:text-gray-100">
+                    Product 2
+                </h3>
+
+                <p class="text-gray-500 dark:text-gray-300">
+                    Modern product description
+                </p>
+
+                <button class="mt-4 w-full bg-blue-500 hover:bg-blue-700 text-white py-2 rounded-lg">
+                    Buy
+                </button>
+
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow p-4">
+
+                <img src="https://picsum.photos/300/200?3"
+                     class="w-full rounded-lg mb-4">
+
+                <h3 class="font-bold text-lg dark:text-gray-100">
+                    Product 3
+                </h3>
+
+                <p class="text-gray-500 dark:text-gray-300">
+                    Modern product description
+                </p>
+
+                <button class="mt-4 w-full bg-blue-500 hover:bg-blue-700 text-white py-2 rounded-lg">
+                    Buy
+                </button>
+
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow p-4">
+
+                <img src="https://picsum.photos/300/200?4"
+                     class="w-full rounded-lg mb-4">
+
+                <h3 class="font-bold text-lg dark:text-gray-100">
+                    Product 4
+                </h3>
+
+                <p class="text-gray-500 dark:text-gray-300">
+                    Modern product description
+                </p>
+
+                <button class="mt-4 w-full bg-blue-500 hover:bg-blue-700 text-white py-2 rounded-lg">
+                    Buy
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 dark:bg-black text-white py-10">
+
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div>
+                <h3 class="font-bold mb-3">
+                    MyStore
+                </h3>
+
+                <p>
+                    Modern responsive landing page using Tailwind CSS
+                </p>
+            </div>
+
+            <div>
+                <h3 class="font-bold mb-3">
+                    Links
+                </h3>
+
+                <ul class="space-y-2">
+                    <li>Home</li>
+                    <li>Products</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-bold mb-3">
+                    Contact
+                </h3>
+
+                <p>Email: mystore@gmail.com</p>
+                <p>Phone: 0123456789</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
