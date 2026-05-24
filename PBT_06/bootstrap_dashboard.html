@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+.sidebar{
+width:220px;
+height:100vh;
+}
+
+.content{
+margin-left:240px;
+}
+
+</style>
+
+</head>
+
+<body class="bg-light">
+
+
+<!-- Sidebar -->
+
+<div class="sidebar bg-dark text-white p-3 position-fixed">
+
+<h4 class="mb-4">
+Dashboard
+</h4>
+
+<div class="list-group">
+
+<a href="#"
+class="list-group-item list-group-item-action">
+
+Home
+
+</a>
+
+<a href="#"
+class="list-group-item list-group-item-action">
+
+Orders
+
+</a>
+
+<a href="#"
+class="list-group-item list-group-item-action">
+
+Users
+
+</a>
+
+<a href="#"
+class="list-group-item list-group-item-action">
+
+Reports
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="content p-4">
+
+
+<!-- Topbar -->
+
+<div class="d-flex justify-content-between mb-4">
+
+<nav>
+
+<ol class="breadcrumb">
+
+<li class="breadcrumb-item">
+
+Home
+
+</li>
+
+<li class="breadcrumb-item active">
+
+Dashboard
+
+</li>
+
+</ol>
+
+</nav>
+
+
+<div class="dropdown">
+
+<button
+class="btn btn-secondary dropdown-toggle"
+data-bs-toggle="dropdown">
+
+Admin
+
+</button>
+
+<ul class="dropdown-menu">
+
+<li>
+<a class="dropdown-item">
+Profile
+</a>
+</li>
+
+<li>
+<a class="dropdown-item">
+Logout
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+<!-- Alert -->
+
+<div class="alert alert-success">
+
+Đăng nhập thành công
+
+</div>
+
+
+
+<!-- Row 1 -->
+
+<div class="row g-3 mb-4">
+
+<div class="col-md-3">
+
+<div class="card bg-primary text-white">
+
+<div class="card-body">
+
+<h5>
+
+Users
+
+</h5>
+
+<h2>
+
+150
+
+</h2>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-3">
+
+<div class="card bg-success text-white">
+
+<div class="card-body">
+
+<h5>
+
+Sales
+
+</h5>
+
+<h2>
+
+350
+
+</h2>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-3">
+
+<div class="card bg-warning">
+
+<div class="card-body">
+
+<h5>
+
+Orders
+
+</h5>
+
+<h2>
+
+89
+
+</h2>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-3">
+
+<div class="card bg-danger text-white">
+
+<div class="card-body">
+
+<h5>
+
+Revenue
+
+</h5>
+
+<h2>
+
+$1500
+
+</h2>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- Row 2 Table -->
+
+<div class="card mb-4">
+
+<div class="card-body">
+
+<h4 class="mb-3">
+
+Danh sách đơn hàng
+
+</h4>
+
+<table
+class="table table-striped table-hover">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Tên</th>
+<th>Sản phẩm</th>
+<th>Trạng thái</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>1</td>
+<td>An</td>
+<td>Điện thoại</td>
+<td>Đã giao</td>
+
+</tr>
+
+<tr>
+
+<td>2</td>
+<td>Bình</td>
+<td>Laptop</td>
+<td>Đang xử lý</td>
+
+</tr>
+
+<tr>
+
+<td>3</td>
+<td>Lan</td>
+<td>Giày</td>
+<td>Đã giao</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+
+
+<!-- Row 3 -->
+
+<div class="card mb-4">
+
+<div class="card-body">
+
+<h4>
+
+Tìm kiếm
+
+</h4>
+
+<div class="input-group">
+
+<input
+type="text"
+class="form-control"
+placeholder="Nhập từ khóa">
+
+<select
+class="form-select">
+
+<option>
+
+Tất cả
+
+</option>
+
+<option>
+
+Đã giao
+
+</option>
+
+<option>
+
+Đang xử lý
+
+</option>
+
+</select>
+
+<button
+class="btn btn-primary">
+
+Search
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- Accordion -->
+
+<div class="accordion"
+id="faq">
+
+
+<div class="accordion-item">
+
+<h2
+class="accordion-header">
+
+<button
+class="accordion-button"
+data-bs-toggle="collapse"
+data-bs-target="#q1">
+
+Làm sao đặt hàng?
+
+</button>
+
+</h2>
+
+<div
+id="q1"
+class="accordion-collapse collapse show">
+
+<div class="accordion-body">
+
+Chọn sản phẩm và thanh toán.
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="accordion-item">
+
+<h2
+class="accordion-header">
+
+<button
+class="accordion-button collapsed"
+data-bs-toggle="collapse"
+data-bs-target="#q2">
+
+Có hoàn tiền không?
+
+</button>
+
+</h2>
+
+<div
+id="q2"
+class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+Có hỗ trợ hoàn tiền.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
