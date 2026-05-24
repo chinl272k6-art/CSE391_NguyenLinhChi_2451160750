@@ -93,3 +93,80 @@ Ghi ngắn kiểu thi:
 .container: rộng cố định theo breakpoint
 .container-fluid: luôn rộng 100%
 .container-md: dưới md full width, từ md trở lên cố định.
+## CÂU C1
+Câu 1: Quy trình đổi $primary sang #E63946
+
+Muốn đổi màu mặc định của Bootstrap cần dùng:
+
+Bootstrap source (SCSS)
+SASS compiler (Ví dụ: Live Sass Compiler hoặc Dart Sass)
+
+Các bước:
+
+Cài Bootstrap bằng npm hoặc tải source SCSS
+Tạo file:
+custom.scss
+Override biến trước khi import Bootstrap:
+$primary: #E63946;
+
+@import "bootstrap/scss/bootstrap";
+Compile:
+custom.scss
+↓
+custom.css
+Link file CSS mới vào HTML:
+<link rel="stylesheet" href="custom.css">
+Câu 2: Tại sao không nên:
+.btn-primary{
+background:red;
+}
+
+Mà nên dùng SASS variables?
+
+Vì:
+
+Không đồng bộ
+Chỉ đổi .btn-primary
+Các thành phần khác như:
+alert-primary
+bg-primary
+text-primary
+border-primary
+link-primary
+
+vẫn giữ màu cũ.
+
+Khó bảo trì
+
+Nếu sau này đổi màu:
+
+đỏ → xanh lá
+
+phải sửa nhiều chỗ.
+
+Mất tính kế thừa của Bootstrap
+
+SASS variable:
+
+$primary:#E63946;
+
+sẽ tự cập nhật toàn bộ component dùng primary
+
+## CÂU C2
+CSS thuần và Bootstrap có nhiều điểm khác nhau. Với CSS thuần, lập trình viên phải tự viết nhiều mã hơn để tạo giao diện như navbar responsive hoặc product card, thường cần khoảng 50–100 dòng CSS hoặc nhiều hơn. Điều này làm thời gian phát triển lâu hơn nhưng bù lại khả năng tùy biến rất cao vì có thể kiểm soát hoàn toàn giao diện. Ngoài ra, để làm responsive cần tự viết media query.
+
+Trong khi đó, Bootstrap giúp giảm đáng kể số dòng CSS cần viết vì đã cung cấp sẵn các component, grid system và utility classes. Nhờ vậy thời gian phát triển nhanh hơn và việc tạo giao diện responsive trở nên đơn giản hơn. Tuy nhiên, khả năng tùy biến của Bootstrap thấp hơn CSS thuần do phải tuân theo cấu trúc và quy tắc của framework.
+
+Bootstrap nên được sử dụng khi cần phát triển nhanh các dự án như landing page, dashboard hoặc các ứng dụng cần responsive trong thời gian ngắn. Ngược lại, không nên dùng Bootstrap khi dự án yêu cầu giao diện quá đặc thù, cần tối ưu kích thước CSS hoặc muốn kiểm soát chi tiết toàn bộ hệ thống thiết kế.
+
+Khi nào NÊN dùng Bootstrap?
+Làm prototype nhanh
+Dashboard/Admin
+Landing page
+Deadline ngắn
+Muốn responsive nhanh
+Khi nào KHÔNG NÊN dùng Bootstrap?
+Giao diện thiết kế quá riêng biệt
+Dự án cần tối ưu kích thước CSS
+Cần kiểm soát từng chi tiết UI
+Muốn tự xây hệ thống thiết kế riêng
