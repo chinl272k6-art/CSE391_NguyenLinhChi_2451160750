@@ -263,3 +263,78 @@ Elements bị ẩn:
 Hầu như không
 Font:
 Kích thước lớn hơn và dễ đọc hơn
+
+## Câu C2
+Mobile (<768px)
+┌──────────────────┐
+│ Logo     ☰       │
+│ Phone            │
+├──────────────────┤
+│    HERO IMAGE    │
+├──────────────────┤
+│ Food 1           │
+│ Food 2           │
+│ Food 3           │
+│ Food 4           │
+│ Food 5           │
+│ Food 6           │
+├──────────────────┤
+│ Reservation Form │
+│ Date             │
+│ Time             │
+│ People           │
+│ Note             │
+├──────────────────┤
+│ Google Maps      │
+├──────────────────┤
+│ Footer           │
+└──────────────────┘
+
+Mobile phân tích
+
+Ẩn:
+Menu đầy đủ → đổi thành hamburger ☰
+Form:
+Đặt dưới grid ảnh
+Grid:
+1 cột
+Tablet (768px–1023px)
+┌─────────────────────────────┐
+│ Logo      Phone      Menu   │
+├─────────────────────────────┤
+│         HERO IMAGE          │
+├─────────────────────────────┤
+│ Food1 │ Food2 │ Food3       │
+│ Food4 │ Food5 │ Food6       │
+├─────────────────────────────┤
+│ Reservation Form            │
+├─────────────────────────────┤
+│ Google Maps                 │
+├─────────────────────────────┤
+│ Footer                      │
+└─────────────────────────────┘
+
+Tablet phân tích
+
+Grid ảnh: 3 cột
+Maps: nằm dưới form
+Menu: hiện đầy đủ hơn
+Desktop (≥1024px)
+┌──────────────────────────────────────────┐
+│ Logo     Menu           Phone            │
+├──────────────────────────────────────────┤
+│              HERO IMAGE                  │
+├──────────────────┬───────────────────────┤
+│ Food Grid        │ Reservation Form      │
+│ 3x2              │                       │
+│                  │ Google Maps           │
+├──────────────────┴───────────────────────┤
+│ Footer                                  │
+└──────────────────────────────────────────┘
+
+Desktop phân tích
+
+Layout: 2 cột
+Sidebar: không cần
+Grid ảnh: 3 × 2
+Form và Maps nằm bên phải
