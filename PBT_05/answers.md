@@ -224,3 +224,42 @@ Kết quả:
 style.scss  →  style.css
 Sau đó HTML sẽ link:
 <link rel="stylesheet" href="style.css">
+
+## CÂU C1
+Website: YouTube
+
+Mobile (375px)
+
+Navigation:
+Menu thu gọn, ưu tiên icon
+Sidebar đầy đủ bị ẩn
+Content grid:
+Video hiển thị khoảng 1 cột
+Elements bị ẩn:
+Sidebar chi tiết
+Một số nút phụ
+Font:
+Nhỏ hơn để phù hợp màn hình
+
+Tablet (768px)
+
+Navigation:
+Menu bắt đầu mở rộng hơn
+Content grid:
+Khoảng 2–3 cột
+Elements bị ẩn:
+Ít thành phần bị ẩn hơn mobile
+Font:
+Tăng nhẹ
+
+Desktop (1440px)
+
+Navigation:
+Sidebar đầy đủ xuất hiện
+Thanh tìm kiếm rộng hơn
+Content grid:
+Khoảng 4–6 cột
+Elements bị ẩn:
+Hầu như không
+Font:
+Kích thước lớn hơn và dễ đọc hơn
