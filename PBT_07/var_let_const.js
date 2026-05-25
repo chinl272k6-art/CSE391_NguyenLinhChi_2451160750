@@ -18,7 +18,7 @@ console.log(arr);
 
 // Đoạn 5
 let a = 1;
-
+  
 {
     let a = 2;
     console.log("Trong block:", a);
