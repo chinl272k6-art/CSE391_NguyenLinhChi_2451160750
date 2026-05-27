@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Multi API Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="top-bar">
+
+            <h1>Multi API Dashboard</h1>
+
+            <button id="refreshBtn">
+                Refresh All
+            </button>
+
+        </div>
+
+        <p id="fetchTime"></p>
+
+        <!-- Global Loading -->
+        <div id="globalLoading">
+            Loading dashboard...
+        </div>
+
+        <!-- Dashboard -->
+        <div class="dashboard">
+
+            <!-- Widget 1 -->
+            <div class="widget">
+
+                <h2>Users API</h2>
+
+                <div id="widget-users"></div>
+
+            </div>
+
+            <!-- Widget 2 -->
+            <div class="widget">
+
+                <h2>Weather API</h2>
+
+                <div id="widget-weather"></div>
+
+            </div>
+
+            <!-- Widget 3 -->
+            <div class="widget">
+
+                <h2>Dog API</h2>
+
+                <div id="widget-dog"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
