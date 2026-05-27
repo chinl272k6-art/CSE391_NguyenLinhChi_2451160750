@@ -1025,7 +1025,7 @@ async function loadAvatar(){
     catch(error){
 
         console.error(
-            "All CDNs failed"
+            "All CDNs failed"  
         );
 
     }
