@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#f3f4f6;
+    padding:30px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+#searchInput{
+    width:100%;
+    padding:12px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+form{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+form input{
+    flex:1;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    padding:10px 16px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+form button{
+    background:#007bff;
+    color:white;
+}
+
+.user-card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:15px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.actions{
+    margin-top:10px;
+}
+
+.edit-btn{
+    background:orange;
+    color:white;
+    margin-right:10px;
+}
+
+.delete-btn{
+    background:red;
+    color:white;
+}
+
+.hidden{
+    display:none;
+}
+
+/* Skeleton */
+.skeleton{
+    height:100px;
+    background:linear-gradient(
+        90deg,
+        #eee 25%,
+        #ddd 50%,
+        #eee 75%
+    );
+
+    background-size:200% 100%;
+
+    animation:loading 1.2s infinite;
+
+    border-radius:12px;
+
+    margin-bottom:15px;
+}
+
+@keyframes loading{
+    0%{
+        background-position:200% 0;
+    }
+
+    100%{
+        background-position:-200% 0;
+    }
+}
+
+/* Toast */
+#toast{
+    position:fixed;
+    top:20px;
+    right:20px;
+    padding:12px 20px;
+    border-radius:8px;
+    color:white;
+    display:none;
+}
+
+.success{
+    background:green;
+}
+
+.error{
+    background:red;
+}
